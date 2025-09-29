@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Document</title>
+      <style>
+       #one
+        {
+            width: 300px;
+            height: 290px;
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0px 0px 50px black;
+        }
+        div>img
+        {
+            width: inherit;
+            height: inherit;
+            box-shadow: 5px 5px 10px black;
+            filter: grayscale(100%);
+            transition: all 1s linear 1s;
+        }
+        #one:hover>img
+        {
+         filter: grayscale(0%);
+         transition: all 4s linear 4s;
+         transform: scale(1.2);
+        }
+         div>#two
+        {
+            background-color: red;
+            width: 300px;
+            height: 290px;
+            margin: 0px;
+            top:0px;
+            left: 0px;     
+            position:absolute;
+            transition: all 3s linear 3s;
+            box-shadow: 0px 0px 10px black;
+        }
+        div:hover>#two
+        {
+            transform: translateY(-100%);
+        }
+        h1
+        {
+            text-align: center;
+            color: orangered;
+            box-shadow: 0px 0px 20px black;
+            width: 500px;
+            background-color: black;
+        }
+        h1:hover
+        {
+            background-color: red;
+            color: black;
+            transition: all 1s linear 1s;
+        }
+        #two>img
+        {
+            filter: grayscale(0%);
+        }
+div>#leftdoor        
+{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    margin: 0px;
+    transform-origin:left;
+    transition: all 1s linear 1s;
+}
+    
+div>#rightdoor
+{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin: 0px;
+    transform-origin:right;
+    transition: all 1s linear 1s;
+}
+div:hover>#leftdoor
+{
+    transform: perspective(200px)rotateY(90deg);
+}
+div:hover>#rightdoor
+{
+    transform: perspective(200px)rotateY(-90deg);
+}
+#rightdoor>img
+        {
+            filter: grayscale(0%);
+        }
+#leftdoor>img
+        {
+            filter: grayscale(0%);
+        }
+      </style>
+</head>
+<body>
+    <center>
+        <h1>JAI HANUMAN</h1>
+    </center>
+    <div id="one">
+       <img  src="./img/img1.webp" alt="">
+        <div id="two">
+            <img  src="./img/img3.jpg" alt="">
+            <!-- <div id="leftdoor">
+                <img src="./img/img2.avif" alt="">
+            </div>
+            <div id="rightdoor">
+                <img src="./img/img2.avif" alt="">
+            </div> -->
+        </div>
+    </div>
+        <center>
+            <audio  controls>
+                <source src="./audio/hanuman_bgm_ringtone.mp3" type="audio/mpeg">``
+        </center>
+</body>
+</html>
